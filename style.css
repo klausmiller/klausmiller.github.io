@@ -22,9 +22,18 @@ body {
 
 /* Navigation */
 nav {
+    position: relative;
     margin-bottom: 40px;
     padding-bottom: 20px;
     border-bottom: 1px solid #eee;
+}
+
+.nav-photo {
+    position: absolute;
+    right: 0;
+    top: 0;
+    max-width: 140px;
+    border-radius: 8px;
 }
 
 nav .name {
@@ -71,6 +80,13 @@ main {
     max-width: 200px;
     border-radius: 8px;
     margin-bottom: 25px;
+}
+
+.profile-img-right {
+    float: right;
+    max-width: 180px;
+    border-radius: 8px;
+    margin: 0 0 15px 25px;
 }
 
 /* Typography */
@@ -175,6 +191,15 @@ footer {
 
     .profile-img {
         max-width: 150px;
+    }
+
+    .profile-img-right {
+        max-width: 120px;
+        margin: 0 0 10px 15px;
+    }
+
+    .nav-photo {
+        max-width: 100px;
     }
 
     h1 {
