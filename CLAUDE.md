@@ -11,9 +11,10 @@ Static HTML/CSS academic website for Klaus Miller, Assistant Professor of Quanti
 ## Site Structure
 - `index.html` - Landing page with bio, links to Google Scholar, ResearchGate, SSRN, GitHub, LinkedIn
 - `research.html` - Working papers, published papers, large-scale collaborative research, conference proceedings, book
+- `talks.html` - Invited talks and conference presentations. Two sections: "Selected Invited & Industry Talks" (linked/recorded — INMA, Oxera, PMDS videos) and "Conference Presentations and Invited Seminars" (year-grouped, old-Google-Sites style, `*` = co-author presented). Seeded from CV (`Conference Presentations and Invited Seminars` section); 2024-2026 use the old website's curated wording verbatim, 2023 and earlier seeded from CV
 - `awards.html` - Research and teaching awards
 - `teaching.html` - HEC Paris teaching experience (Grande Ecole, MBA/EMBA, PhD, Summer School)
-- `media.html` - Media appearances and press coverage (clickable titles, paper references)
+- `media.html` - Media appearances and press coverage (clickable titles, paper references). Invited/industry/recorded talks were split out to `talks.html` (June 2026)
 - `contact.html` - Contact information
 - `style.css` - Stylesheet with classes: `.venue` (italic journals), `.highlight` (bold awards), `.year`, `.plain` (no bullets), `.name`, `.container` (760px max)
 
@@ -85,3 +86,12 @@ Static HTML/CSS academic website for Klaus Miller, Assistant Professor of Quanti
 ### February 2026 - Media Page Redesign
 - Made media headlines clickable (link wrapped in title instead of separate [Link]/[Video] line)
 - Shortened page by removing redundant link lines
+
+### June 2026 - Added Talks Page
+- Created `talks.html` to separate invited research/industry talks and conferences from media coverage
+- Added "Talks" to nav across all 7 pages (Home | Research | Talks | Awards | Teaching | Media | Contact)
+- Moved 4 entries from `media.html` to `talks.html` ("Selected Invited & Industry Talks"): INMA Master Class (2026), Oxera roundtable (2026), two recorded Platforms/Markets/Digital Society talks (2025, 2024)
+- "Conference Presentations and Invited Seminars": comprehensive year-grouped 2017-2026 seeded from CV `miller_cv-2026-05-07d.docx`, deduped per year, sorted newest-to-oldest within year, `*` = co-author presented. Includes planned 2026 talks per KM. CV has no 2015-2016 conference entries, so the list begins 2017 (KM's "since 2015 at Goethe" rule). Pre-2017 WTP/dissertation-era talks (2006-2014) intentionally excluded
+- KM decisions applied: YES Basel + Weizenbaum kept under 2024; a second (Oct 2025) Weizenbaum added under 2025; old-site-only 2025 seminars retained (Columbia, Maryland, Kansas, Kelley, NYU Law, CUHK, UK Digital Economics Workshop); borderline items (CNIL/Aghion, HEC "Data in Advertising" video, CGTN) left in `media.html`
+- Open polish: two old-site hyperlinks (European Quant Marketing Workshop, INRIA BALANCE Workshop) not yet re-added (URLs pending from KM); a few `*` attributions on older years worth a spot-check
+- Committed and pushed to master
