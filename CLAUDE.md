@@ -43,7 +43,7 @@ Static HTML/CSS academic website for Klaus Miller, Assistant Professor of Quanti
 - Previous website: https://sites.google.com/view/klausmiller (Google Sites, being replaced)
 
 ## Key Decisions
-- "Sophisticated Consumers with Inertia" listed as "Revise and Resubmit" at AER on the public website (CV says "Conditionally Accepted" but user chose to keep R&R publicly)
+- "Sophisticated Consumers with Inertia" listed as "Conditionally Accepted" at AER on the public website (updated 2026-07-14; still under Working Papers until fully accepted)
 - Media page: Titles are clickable links (where URL exists), no separate [Link]/[Video] lines
 - Media entries reference the underlying paper with "On: Paper Title" linking to SSRN/journal
 - Teaching page shows HEC Paris experience only (no Goethe University)
