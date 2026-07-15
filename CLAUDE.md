@@ -44,6 +44,7 @@ Static HTML/CSS academic website for Klaus Miller, Assistant Professor of Quanti
 
 ## Key Decisions
 - "Sophisticated Consumers with Inertia" listed as "Conditionally Accepted" at AER on the public website (updated 2026-07-14; still under Working Papers until fully accepted)
+- "The Sources of Researcher Variation in Economics" (Many Economists Collaborative) listed as "Conditionally Accepted" at Journal of Economic Literature on the public website (updated 2026-07-15; was "Revise and Resubmit")
 - Media page: Titles are clickable links (where URL exists), no separate [Link]/[Video] lines
 - Media entries reference the underlying paper with "On: Paper Title" linking to SSRN/journal
 - Teaching page shows HEC Paris experience only (no Goethe University)
