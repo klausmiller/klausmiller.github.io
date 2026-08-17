@@ -10,7 +10,7 @@ Static HTML/CSS academic website for Klaus Miller, Assistant Professor of Quanti
 
 ## Site Structure
 - `index.html` - Landing page with bio, links to Google Scholar, ResearchGate, SSRN, GitHub, LinkedIn
-- `research.html` - Working papers, published papers, large-scale collaborative research, conference proceedings, book
+- `research.html` - Working papers, published & accepted papers, industry publications (HBR), conference proceedings, book
 - `talks.html` - Invited talks and conference presentations. Two sections: "Selected Invited & Industry Talks" (linked/recorded — INMA, Oxera, PMDS videos) and "Conference Presentations and Invited Seminars" (year-grouped, old-Google-Sites style, `*` = co-author presented). Seeded from CV (`Conference Presentations and Invited Seminars` section); 2024-2026 use the old website's curated wording verbatim, 2023 and earlier seeded from CV
 - `awards.html` - Research and teaching awards
 - `teaching.html` - HEC Paris teaching experience (Grande Ecole, MBA/EMBA, PhD, Summer School)
@@ -44,7 +44,9 @@ Static HTML/CSS academic website for Klaus Miller, Assistant Professor of Quanti
 
 ## Key Decisions
 - "Sophisticated Consumers with Inertia" listed as "Conditionally Accepted" at AER on the public website (updated 2026-07-14; still under Working Papers until fully accepted)
-- "The Sources of Researcher Variation in Economics" (Many Economists Collaborative) listed as "Conditionally Accepted" at Journal of Economic Literature on the public website (updated 2026-07-15; was "Revise and Resubmit")
+- "The Sources of Researcher Variation in Economics" (Many Economists Collaborative) listed as "Accepted, Journal of Economic Literature" under Published & Accepted Papers (updated 2026-08-17; was "Conditionally Accepted" under the now-dissolved collaborative section)
+- No separate "Large-Scale Collaborative Research" section — consortium papers sit in the regular lists with a one-line "with [leads], and the [Collaborative]" attribution (KM decision, 2026-08-17)
+- Harvard Business Review pieces live in their own "Industry Publications" section, not mixed into Published & Accepted Papers (KM decision, 2026-08-17)
 - Media page: Titles are clickable links (where URL exists), no separate [Link]/[Video] lines
 - Media entries reference the underlying paper with "On: Paper Title" linking to SSRN/journal
 - Teaching page shows HEC Paris experience only (no Goethe University)
@@ -110,3 +112,10 @@ Static HTML/CSS academic website for Klaus Miller, Assistant Professor of Quanti
 
 ### July 2026 - Policy & Regulatory Citations Simplified
 - KM felt the 3-line entries (title/date, citing body, "Cites X paper... — page/footnote") were too long. Dropped the third line (paper-relationship detail) from all Policy & Regulatory Citations and Cited in Litigation entries; now just title+date and citing body/venue, two lines each, matching the rest of the site's minimal style. The specific paper/page citation detail still lives in `~/.claude/workflows/policy-citation-search.md`'s known-citations list if it's ever needed again
+
+### August 2026 - Research Page Restructure (JEL accepted, HBR split out)
+- "The Sources of Researcher Variation in Economics" is now **Accepted at the Journal of Economic Literature** (was Conditionally Accepted since 2026-07-15). KM chose the wording "Accepted" over "Forthcoming"
+- Dissolved the "Large-Scale Collaborative Research" section per KM. Its two papers moved into the regular lists: the JEL paper to the top of Published & Accepted Papers, the IJRM Reproducibility Collaboration many-analyst preprint to Working Papers (KM's call — it has no journal status yet, so it belongs with the unpublished work)
+- Consortium attribution condensed from three lines (collaborative name / lead collaborators with affiliations / status) to the site's standard one-line format: "with Nick Huntington-Klein, Claus Pörtner, and the Many Economists Collaborative (146 research teams)". Same treatment applied to the many-analyst preprint ("with Koen Pauwels, Karin Teichmann, Oliver Koll, Hannes Datta, Harald van Heerde, and the IJRM Reproducibility Collaboration"), dropping the university affiliations that no other entry on the page carries
+- New "Industry Publications" section between Published & Accepted Papers and Conference Proceedings, holding both HBR pieces (auto-renew with Z. John Zhang, May 2026; Cookies Are Worth More Than You Think with Bernd Skiera, Nov–Dec 2024). Peer-reviewed and practitioner work are now visibly separated
+- Section order on `research.html`: Working Papers → Published & Accepted Papers → Industry Publications → Conference Proceedings → Book
