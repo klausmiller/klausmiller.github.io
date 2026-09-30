@@ -127,3 +127,7 @@ Static HTML/CSS academic website for Klaus Miller, Assistant Professor of Quanti
 - The AEA URL was stored without the `&&from=f` tracking suffix that AEA's forthcoming-articles listing appends
 - `talks.html`: added "Swiss Academy of Marketing Science (SAMS) Conference Lausanne (Switzerland)" at the front of the 2026 line (4 September 2026, UNIL). KM presented the polarization paper himself, so no `*`. Placed first because it is the most recent 2026 item
 - CV updated in parallel (`miller_cv-2026-09-11a.docx`): same Forthcoming wording plus an AEA link, SAMS added to the "Engagement vs. Commitment" presentation block
+
+### September 2026 - AER, opening paragraph
+- `index.html` journal list now leads with the *American Economic Review*, ahead of JEL (commit `08eae07`, together with the AER acceptance on `research.html`)
+- `index.html` opening paragraph rewritten per KM (2026-09-30): adds "since 2021" to the Hi!PARIS chair and a new sentence on the career path ("Before returning to academia at Goethe University Frankfurt in 2015, I spent nearly five years in industry"); research focus now reads "with a focus on online advertising, privacy, and the digital economy". HEC Paris and Hi!PARIS links kept; Goethe left unlinked
