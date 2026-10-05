@@ -51,7 +51,7 @@ Static HTML/CSS academic website for Klaus Miller, Assistant Professor of Quanti
 - Media entries reference the underlying paper with "On: Paper Title" linking to SSRN/journal
 - Teaching page shows HEC Paris experience only (no Goethe University)
 - Copyright footer: 2026 on all pages
-- No profile image on landing page
+- Nav photo: `profile.jpg` (head-and-shoulders, 3:2, 600x400 px) sits top-right of the nav on `index.html` only, via `.nav-photo` (140px wide, 100px on mobile)
 - Education page excluded from navigation
 
 ## Change Log
@@ -134,3 +134,7 @@ Static HTML/CSS academic website for Klaus Miller, Assistant Professor of Quanti
 - Hi! PARIS now carries its official name, taken from hi-paris.fr: "Hi! PARIS Center on Data Analytics and Artificial Intelligence for Science, Business and Society" (was "Hi!PARIS Center on Data Analytics and AI"). Uses the institute's own spelling with a space. Homepage only: the grant title (`awards.html`) and talk venues (`talks.html`, `teaching.html`) still read "Hi!PARIS"
 - ERC Advanced Grant role and dates corrected (KM, 2026-09-30). Klaus was not officially listed as Co-PI, so his role is now "investigator" everywhere, never "co-investigator" or "Co-PI". Dates are 2019-2026 because the grant was extended. Changed on `index.html` ("an investigator") and on `awards.html`, where the entry was stale at "2019-2024" and "Co-Investigator"
 - Homepage bio split from 4 into 7 paragraphs for readability (KM's request). Wording and sentence order unchanged. Breaks: position + career path / research focus + methods / visiting + journals / industry collaboration + media / awards + ERC (unchanged) / editorial + reviewing / conference co-organizing
+
+### October 2026 - New Portrait Photo
+- Replaced `profile.jpg` (nav photo on `index.html`) with the official HEC Paris portrait (2026, blue background)
+- Cropped to head-and-shoulders at 3:2 so it fits the existing `.nav-photo` slot without CSS changes; downscaled to 600x400 px / ~21 KB (previous file was 5760x3840 px / 4.7 MB)
