@@ -28,25 +28,17 @@ nav {
     border-bottom: 1px solid #eee;
 }
 
-
 nav .name {
     font-size: 1.4rem;
     font-weight: bold;
     color: #222;
     text-decoration: none;
     display: block;
-    margin-bottom: 2px;
+    margin-bottom: 10px;
 }
 
 nav .name:hover {
     color: #0044aa;
-}
-
-nav .tagline {
-    color: #555;
-    font-size: 0.95rem;
-    line-height: 1.4;
-    margin-bottom: 12px;
 }
 
 nav ul {
@@ -198,10 +190,6 @@ footer {
         display: block;
         max-width: 150px;
         margin: 0 0 20px 0;
-    }
-
-    nav .tagline {
-        font-size: 0.85rem;
     }
 
     h1 {

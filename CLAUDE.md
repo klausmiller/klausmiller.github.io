@@ -16,7 +16,7 @@ Static HTML/CSS academic website for Klaus Miller, Assistant Professor of Quanti
 - `teaching.html` - HEC Paris teaching experience (Grande Ecole, MBA/EMBA, PhD, Summer School)
 - `media.html` - Media appearances and press coverage (clickable titles, paper references). Invited/industry/recorded talks were split out to `talks.html` (June 2026). Three sections: "Policy & Regulatory Citations" (regulators/legislatures citing his papers directly), "Cited in Litigation" (court filings), "Press Coverage" (everything else, added July 2026)
 - `contact.html` - Contact information
-- `style.css` - Stylesheet with classes: `.venue` (italic journals), `.highlight` (bold awards), `.year`, `.plain` (no bullets), `.name`, `nav .tagline` (title line under the name), `.profile-img-right` (floated bio portrait), `.container` (760px max)
+- `style.css` - Stylesheet with classes: `.venue` (italic journals), `.highlight` (bold awards), `.year`, `.plain` (no bullets), `.name`, `.profile-img-right` (floated bio portrait), `.container` (760px max)
 
 ## Files Not in Navigation
 - `education.html` - Removed from git (excluded from navigation)
@@ -52,7 +52,7 @@ Static HTML/CSS academic website for Klaus Miller, Assistant Professor of Quanti
 - Teaching page shows HEC Paris experience only (no Goethe University)
 - Copyright footer: 2026 on all pages
 - Profile photo: `profile.jpg` (official HEC portrait 2026, 4:5 head-to-chest crop, 600x750 px) floats right of the bio on `index.html` via `.profile-img-right` (200px wide, 140px on mobile). No photo in the nav
-- Title line under the name on every page (`nav .tagline`): "Assistant Professor of Marketing, HEC Paris · Chairholder, Hi! PARIS Center". Position is "Assistant Professor of Marketing" everywhere, incl. the `index.html` `<title>` (KM decision, 2026-10-06)
+- **No title line in the header.** One was added on 2026-10-06 and removed on 2026-10-07: KM found it made the header heavy. The header is name + nav only. Position is still "Assistant Professor of Marketing" everywhere it appears, incl. the `index.html` `<title>`
 - Education page excluded from navigation
 
 ## Change Log
@@ -161,3 +161,8 @@ Static HTML/CSS academic website for Klaus Miller, Assistant Professor of Quanti
 - The industry-partner sentence from the old paragraph 4 stays appended here, since the four-paragraph merge had folded it into paragraph 2
 - Four-paragraph structure and layout unchanged. Bio is now 248 words
 - **Standing note:** do not re-propose a rewritten research statement unprompted. KM owns that wording
+
+### October 2026 - Header Title Line Removed
+- The title line added under the name on all 7 pages on 2026-10-06 is gone. KM: "it makes it a little bit heavy". Header is back to name + nav
+- `nav .tagline` removed from `style.css` (desktop and mobile rules), and `nav .name` margin restored from 2px to its original 10px, since the gap above the nav list was being provided by the tagline
+- Net effect: the header is identical to its pre-2026-10-06 state. The position is no longer stated above the fold on the inner pages; on `index.html` the first bio sentence carries it
