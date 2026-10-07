@@ -16,7 +16,7 @@ Static HTML/CSS academic website for Klaus Miller, Assistant Professor of Quanti
 - `teaching.html` - HEC Paris teaching experience (Grande Ecole, MBA/EMBA, PhD, Summer School)
 - `media.html` - Media appearances and press coverage (clickable titles, paper references). Invited/industry/recorded talks were split out to `talks.html` (June 2026). Three sections: "Policy & Regulatory Citations" (regulators/legislatures citing his papers directly), "Cited in Litigation" (court filings), "Press Coverage" (everything else, added July 2026)
 - `contact.html` - Contact information
-- `style.css` - Stylesheet with classes: `.venue` (italic journals), `.highlight` (bold awards), `.year`, `.plain` (no bullets), `.name`, `.container` (760px max)
+- `style.css` - Stylesheet with classes: `.venue` (italic journals), `.highlight` (bold awards), `.year`, `.plain` (no bullets), `.name`, `nav .tagline` (title line under the name), `.profile-img-right` (floated bio portrait), `.container` (760px max)
 
 ## Files Not in Navigation
 - `education.html` - Removed from git (excluded from navigation)
@@ -51,7 +51,8 @@ Static HTML/CSS academic website for Klaus Miller, Assistant Professor of Quanti
 - Media entries reference the underlying paper with "On: Paper Title" linking to SSRN/journal
 - Teaching page shows HEC Paris experience only (no Goethe University)
 - Copyright footer: 2026 on all pages
-- Nav photo: `profile.jpg` (head-and-shoulders, 3:2, 600x400 px) sits top-right of the nav on `index.html` only, via `.nav-photo` (140px wide, 100px on mobile)
+- Profile photo: `profile.jpg` (official HEC portrait 2026, 4:5 head-to-chest crop, 600x750 px) floats right of the bio on `index.html` via `.profile-img-right` (200px wide, 140px on mobile). No photo in the nav
+- Title line under the name on every page (`nav .tagline`): "Assistant Professor of Marketing, HEC Paris · Chairholder, Hi! PARIS Center". Position is "Assistant Professor of Marketing" everywhere, incl. the `index.html` `<title>` (KM decision, 2026-10-06)
 - Education page excluded from navigation
 
 ## Change Log
@@ -138,3 +139,10 @@ Static HTML/CSS academic website for Klaus Miller, Assistant Professor of Quanti
 ### October 2026 - New Portrait Photo
 - Replaced `profile.jpg` (nav photo on `index.html`) with the official HEC Paris portrait (2026, blue background)
 - Cropped to head-and-shoulders at 3:2 so it fits the existing `.nav-photo` slot without CSS changes; downscaled to 600x400 px / ~21 KB (previous file was 5760x3840 px / 4.7 MB)
+
+### October 2026 - Home Page: Portrait Beside the Bio, Title Line, Bio Wording
+- Photo moved out of the nav: `profile.jpg` is now a 4:5 head-to-chest crop of the official HEC portrait (600x750 px) floated right of the opening paragraphs via the previously unused `.profile-img-right` (200px; 140px on mobile). The 140px nav thumbnail made the face only ~45px tall; `.nav-photo` CSS removed as unused
+- Title line added under the name on all 7 pages: "Assistant Professor of Marketing, HEC Paris - Chairholder, Hi! PARIS Center" (`nav .tagline`). Chosen over a circular-avatar header and a two-column hero (nav loses the name, tagline wrapped badly); mockups of all three were reviewed by KM
+- `index.html` `<title>` now "Klaus Miller - Assistant Professor of Marketing" (was "... of Quantitative Marketing", which contradicted the body). KM picked "Marketing"
+- Bio reworded, still seven paragraphs at KM's request; all facts, links and venue spans unchanged. Paragraph openings varied (previously all seven began with "I"); journals now lead paragraph 3 ahead of the visiting positions; ERC role stays "investigator", 2019-2026
+- Open, suggested 2026-10-05 and not yet decided: a 3-item "Recent" block above the bio, CV (PDF) and ORCID in the Links row, compressing seven paragraphs to four or five
