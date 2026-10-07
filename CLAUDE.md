@@ -154,3 +154,10 @@ Static HTML/CSS academic website for Klaus Miller, Assistant Professor of Quanti
 - No link or journal name dropped: the edit script asserts the `href` set and the `<span class="venue">` set are identical to the previous version, and that the new text is strictly shorter
 - Still open: a 3-item "Recent" block, CV (PDF) + ORCID in the Links row, icon links row
 - **Inconsistency flagged to KM, not changed:** `index.html` says "IJRM Best Paper Award", `research.html` says "IJRM Best Article Award 2024"
+
+### October 2026 - Research Paragraph Reverted to KM's Own Wording
+- Paragraph 2 is **back to Klaus's categorisation**: "My research sits at the intersection of quantitative marketing, economics, and information systems. I study online advertising, privacy, and the digital economy, drawing on econometric methods, causal machine learning, and large-scale field experiments." Verbatim from `9eded1e`
+- The two-strand statement Claude had drafted ("what personal data is worth and who captures that value" / "why consumers stay in contracts they would not choose again") is **removed**. It was Claude's wording, not Klaus's. KM will revisit it when his tenure package is available
+- The industry-partner sentence from the old paragraph 4 stays appended here, since the four-paragraph merge had folded it into paragraph 2
+- Four-paragraph structure and layout unchanged. Bio is now 248 words
+- **Standing note:** do not re-propose a rewritten research statement unprompted. KM owns that wording
