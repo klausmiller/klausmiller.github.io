@@ -10,7 +10,7 @@ Static HTML/CSS academic website for Klaus Miller, Assistant Professor of Quanti
 
 ## Site Structure
 - `index.html` - Landing page with bio, links to Google Scholar, ResearchGate, SSRN, GitHub, LinkedIn
-- `research.html` - Working papers, published & accepted papers, industry publications (HBR), conference proceedings, book
+- `research.html` - Published & accepted papers, working papers, industry publications (HBR), conference proceedings, book
 - `talks.html` - Invited talks and conference presentations. Two sections: "Selected Invited & Industry Talks" (linked/recorded — INMA, Oxera, PMDS videos) and "Conference Presentations and Invited Seminars" (year-grouped, old-Google-Sites style, `*` = co-author presented). Seeded from CV (`Conference Presentations and Invited Seminars` section); 2024-2026 use the old website's curated wording verbatim, 2023 and earlier seeded from CV
 - `awards.html` - Research and teaching awards
 - `teaching.html` - HEC Paris teaching experience (Grande Ecole, MBA/EMBA, PhD, Summer School)
@@ -43,7 +43,7 @@ Static HTML/CSS academic website for Klaus Miller, Assistant Professor of Quanti
 - Previous website: https://sites.google.com/view/klausmiller (Google Sites, being replaced)
 
 ## Key Decisions
-- "Sophisticated Consumers with Inertia" listed as "Conditionally Accepted" at AER on the public website (updated 2026-07-14; still under Working Papers until fully accepted)
+- "Sophisticated Consumers with Inertia" listed as "Forthcoming, American Economic Review" under Published & Accepted Papers (accepted 2026-09; was "Conditionally Accepted" under Working Papers from 2026-07-14)
 - "The Sources of Researcher Variation in Economics" (Many Economists Collaborative) listed as "Accepted, Journal of Economic Literature" under Published & Accepted Papers (updated 2026-08-17; was "Conditionally Accepted" under the now-dissolved collaborative section)
 - No separate "Large-Scale Collaborative Research" section — consortium papers sit in the regular lists with a one-line "with [leads], and the [Collaborative]" attribution (KM decision, 2026-08-17)
 - Harvard Business Review pieces live in their own "Industry Publications" section, not mixed into Published & Accepted Papers (KM decision, 2026-08-17)
@@ -166,3 +166,7 @@ Static HTML/CSS academic website for Klaus Miller, Assistant Professor of Quanti
 - The title line added under the name on all 7 pages on 2026-10-06 is gone. KM: "it makes it a little bit heavy". Header is back to name + nav
 - `nav .tagline` removed from `style.css` (desktop and mobile rules), and `nav .name` margin restored from 2px to its original 10px, since the gap above the nav list was being provided by the tagline
 - Net effect: the header is identical to its pre-2026-10-06 state. The position is no longer stated above the fold on the inner pages; on `index.html` the first bio sentence carries it
+
+### October 2026 - Research Page: Published Papers First
+- `research.html` section order is now Published & Accepted Papers -> Working Papers -> Industry Publications -> Conference Proceedings -> Book (KM, 2026-10-13). Previously Working Papers led the page
+- Pure block swap: no entry, link or wording changed (script asserted identical `<li>` count, `href` set and byte length)
