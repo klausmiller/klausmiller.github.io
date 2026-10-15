@@ -198,3 +198,9 @@ Static HTML/CSS academic website for Klaus Miller, Assistant Professor of Quanti
 - The roles moved to `awards.html` as a new **"Editorial & Reviewing"** section, placed between Research Grants and Fellowships & Invitations so current service sits above the historical scholarships. Guest AE (IJRM) and ad-hoc reviewer (ManSci, MktSci, JMR, ISR) as two `ul.plain` entries, matching the page's existing markup
 - `awards.html` `<h1>` changed "Awards" -> **"Awards & Service"**, since the page already held grants and fellowships and now holds service too. The **nav label stays "Awards"** to avoid touching all 7 pages; say the word to align it
 - There is still **no separate Service page and no 8th nav item**; a 2026-04-27 plan to build a Service section on the front page was never approved and is now moot, since KM wants this off the front page entirely
+
+### October 2026 - Credentials Paragraph Split
+- KM asked for a break before "I have been a visiting scholar at the Wharton School...". Journals + press coverage now close one paragraph; visiting positions + ISMS + IJRM award + ERC open the next. Bio is **5 paragraphs / 211 words**
+- Pure split: prose, `href` set and `<span class="venue">` set asserted byte-identical to the previous version. No rewording
+- Also normalised the bio `<p>`/`</p>` tags to one indentation level. One had been left at the wrong depth by the 2026-10-15 two-column refactor; cosmetic only
+- Bio paragraph count over this period: 4 -> 7 (2026-09-30) -> 4 (2026-10-07) -> 5 (now)
