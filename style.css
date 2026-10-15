@@ -67,18 +67,26 @@ main {
     margin-bottom: 60px;
 }
 
-/* Profile image */
-.profile-img {
-    max-width: 200px;
-    border-radius: 8px;
-    margin-bottom: 25px;
+/* Bio: text column left, portrait column right */
+.bio {
+    display: flex;
+    gap: 36px;
+    align-items: flex-start;
 }
 
-.profile-img-right {
-    float: right;
-    max-width: 200px;
+.bio-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.bio-text p:last-child {
+    margin-bottom: 0;
+}
+
+.bio-photo {
+    width: 270px;
+    flex-shrink: 0;
     border-radius: 8px;
-    margin: 4px 0 15px 30px;
 }
 
 /* Typography */
@@ -181,15 +189,13 @@ footer {
         gap: 5px 15px;
     }
 
-    .profile-img {
-        max-width: 150px;
+    .bio {
+        flex-direction: column-reverse;
+        gap: 22px;
     }
 
-    .profile-img-right {
-        float: none;
-        display: block;
-        max-width: 150px;
-        margin: 0 0 20px 0;
+    .bio-photo {
+        width: 175px;
     }
 
     h1 {

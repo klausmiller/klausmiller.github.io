@@ -16,11 +16,11 @@ Static HTML/CSS academic website for Klaus Miller, Assistant Professor of Quanti
 - `teaching.html` - HEC Paris teaching experience (Grande Ecole, MBA/EMBA, PhD, Summer School)
 - `media.html` - Media appearances and press coverage (clickable titles, paper references). Invited/industry/recorded talks were split out to `talks.html` (June 2026). Three sections: "Policy & Regulatory Citations" (regulators/legislatures citing his papers directly), "Cited in Litigation" (court filings), "Press Coverage" (everything else, added July 2026)
 - `contact.html` - Contact information
-- `style.css` - Stylesheet with classes: `.venue` (italic journals), `.highlight` (bold awards), `.year`, `.plain` (no bullets), `.name`, `.profile-img-right` (floated bio portrait), `.container` (760px max)
+- `style.css` - Stylesheet with classes: `.venue` (italic journals), `.highlight` (bold awards), `.year`, `.plain` (no bullets), `.name`, `.bio` / `.bio-text` / `.bio-photo` (two-column bio), `.container` (760px max)
 
 ## Files Not in Navigation
 - `education.html` - Removed from git (excluded from navigation)
-- `images/` - Profile image removed from landing page, folder cleaned from git
+- `images/` - Removed from git; the portrait lives at the repo root as `profile.jpg`
 
 ## Domain Setup
 - Domain registrar: 1&1 (1und1.de / IONOS)
@@ -36,7 +36,9 @@ Static HTML/CSS academic website for Klaus Miller, Assistant Professor of Quanti
 - `.name` - Nav name link
 - `.active` - Current page nav highlight
 - `.container` - Main wrapper (max-width 760px)
-- `.profile-img` - Profile image (currently unused)
+- `.bio` - Two-column bio wrapper (flex)
+- `.bio-text` - Left text column
+- `.bio-photo` - Right portrait column (270px)
 
 ## Content Sources
 - CV file: `C:\Users\millerk\HEC PARIS Dropbox\Klaus Miller\000_Admin\HEC\09_AcademicActivityReporting\05_2025-2026\miller_cv-2026-01-29.docx`
@@ -51,7 +53,7 @@ Static HTML/CSS academic website for Klaus Miller, Assistant Professor of Quanti
 - Media entries reference the underlying paper with "On: Paper Title" linking to SSRN/journal
 - Teaching page shows HEC Paris experience only (no Goethe University)
 - Copyright footer: 2026 on all pages
-- Profile photo: `profile.jpg` (official HEC portrait 2026, 4:5 head-to-chest crop, 600x750 px) floats right of the bio on `index.html` via `.profile-img-right` (200px wide, 140px on mobile). No photo in the nav
+- Profile photo: `profile.jpg` is the **full-length** official HEC portrait 2026, uncropped 3:4, 810x1080 px. The bio is a two-column flex (`.bio`): text column left (`.bio-text`), portrait column right (`.bio-photo`, 270px). Below 600px it stacks `column-reverse`, photo above the text at 175px. No photo in the nav, and the text no longer wraps around the photo (KM, 2026-10-15)
 - **No title line in the header.** One was added on 2026-10-06 and removed on 2026-10-07: KM found it made the header heavy. The header is name + nav only. Position is still "Assistant Professor of Marketing" everywhere it appears, incl. the `index.html` `<title>`
 - Education page excluded from navigation
 
@@ -170,3 +172,11 @@ Static HTML/CSS academic website for Klaus Miller, Assistant Professor of Quanti
 ### October 2026 - Research Page: Published Papers First
 - `research.html` section order is now Published & Accepted Papers -> Working Papers -> Industry Publications -> Conference Proceedings -> Book (KM, 2026-10-13). Previously Working Papers led the page
 - Pure block swap: no entry, link or wording changed (script asserted identical `<li>` count, `href` set and byte length)
+
+### October 2026 - Home Page: Two-Column Bio with the Full-Length Portrait
+- KM asked for "the full body picture on the home page on the right and the text on the left". `profile.jpg` is now the **uncropped** portrait (3:4, 810x1080 px), not the 4:5 head-to-chest crop
+- The bio became a real two-column flex rather than a float: `.bio` wraps `.bio-text` (left, flexible) and `.bio-photo` (right, 270px fixed). Text no longer wraps underneath the photo
+- Mobile (<=600px): `flex-direction: column-reverse` puts the portrait above full-width text at 175px
+- `.profile-img` and `.profile-img-right` removed from `style.css`; both were now unused
+- **Trade-off flagged to KM:** at the 270px column the full frame renders his face about 85px tall, against about 108px for the 4:5 crop it replaced. He chose the full picture knowing this. The crop is recoverable from `bd2d94f:profile.jpg`
+- Container stays 760px, so the text column is about 454px. No other page changed
