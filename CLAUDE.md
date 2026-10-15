@@ -16,7 +16,7 @@ Static HTML/CSS academic website for Klaus Miller, Assistant Professor of Quanti
 - `teaching.html` - HEC Paris teaching experience (Grande Ecole, MBA/EMBA, PhD, Summer School)
 - `media.html` - Media appearances and press coverage (clickable titles, paper references). Invited/industry/recorded talks were split out to `talks.html` (June 2026). Three sections: "Policy & Regulatory Citations" (regulators/legislatures citing his papers directly), "Cited in Litigation" (court filings), "Press Coverage" (everything else, added July 2026)
 - `contact.html` - Contact information
-- `style.css` - Stylesheet with classes: `.venue` (italic journals), `.highlight` (bold awards), `.year`, `.plain` (no bullets), `.name`, `.bio` / `.bio-text` / `.bio-photo` (two-column bio), `.container` (860px max)
+- `style.css` - Stylesheet with classes: `.venue` (italic journals), `.highlight` (bold awards), `.year`, `.plain` (no bullets), `.name`, `.bio` / `.bio-text` / `.bio-photo` (two-column bio), `.container` (920px max)
 
 ## Files Not in Navigation
 - `education.html` - Removed from git (excluded from navigation)
@@ -35,7 +35,7 @@ Static HTML/CSS academic website for Klaus Miller, Assistant Professor of Quanti
 - `.plain` - List without bullets
 - `.name` - Nav name link
 - `.active` - Current page nav highlight
-- `.container` - Main wrapper (max-width 860px)
+- `.container` - Main wrapper (max-width 920px)
 - `.bio` - Two-column bio wrapper (flex)
 - `.bio-text` - Left text column
 - `.bio-photo` - Right portrait column (270px)
@@ -187,3 +187,8 @@ Static HTML/CSS academic website for Klaus Miller, Assistant Professor of Quanti
 - **Flagged to KM, not decided:** his wording drops "causal machine learning", which his own profile lists among his methods. One clause to add back if that was unintended
 - He also floated dropping the methods clause entirely. Kept it, on the argument that methods are a standard and useful signal on an academic homepage, and said so; one edit away if he disagrees
 - Bio stays 248 words, four paragraphs
+
+### October 2026 - Container Widened Again to 920px
+- KM: "a little bit broader but not much". `.container` 860px -> **920px**, site-wide. Home text column is now ~614px beside the unchanged 270px portrait
+- Width progression this day: 760 -> 860 -> 920. Photo column deliberately left at 270px; he asked for width, not a bigger photo
+- Committed by partial-staging again, since another session's uncommitted `.paper-links` block still shares `style.css`
