@@ -266,3 +266,12 @@ Six parallel search agents swept English, German, French, ad-tech trade, tech-po
 - **2022 Forbes/HEC column moved to Industry Publications** on `research.html`, beside the two HBR pieces, since it is self-authored
 - **HBR "Cookies Are Worth More Than You Think" confirmed correct by KM: it was print-only.** The entry stays without a URL; the 404 is expected, not an error. Do not "fix" it
 - **SCECR 2026 stays**, per KM, despite the folder being named `2026-04-SCECR-ausgefallen`
+
+### October 2026 - Site-Wide Link Check
+First full link check of the site. **113 distinct links across 7 pages: 8 local (all present), 1 mailto, 104 external.**
+- **Exactly ONE genuinely broken link**, now fixed: the homepage pointed at `digitaleconomics-paris.fr/conference-2026`, which 404s. **That site renests editions every year** - the 2026 page now lives at `/conference-2027/conference-2026` - so the link was repointed to the **site root**, which is stable. Do not re-link a year-specific edition page
+- **27 links return 403/429 to scripts but work in a browser** and must NOT be "fixed": all SSRN, ScienceDirect, SAGE, Wiley, Economist, Forbes, ResearchGate, OECD, hec.edu/knowledge. SSRN blocks every non-browser client by design
+- **ftc.gov returns 404 to curl via its Akamai edge** while loading fine through WebFetch - verified both FTC links are live. A curl-only sweep would wrongly condemn them
+- **3 CNIL links return 503** because cnil.fr is under maintenance (KM confirmed). Not dead
+- **Bundeskartellamt returned 400 to a HEAD probe** but 200 to a full GET - query-string/HEAD artifact, not a problem
+- **Lesson:** a link checker must separate DEAD (404/410) from BLOCKED (403/429) and must retry HEAD failures with GET, or it generates mostly false alarms. Script kept at `<scratchpad>/link_check.py`
