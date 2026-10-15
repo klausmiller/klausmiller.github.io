@@ -12,7 +12,7 @@ Static HTML/CSS academic website for Klaus Miller, Assistant Professor of Quanti
 - `index.html` - Landing page with bio, links to Google Scholar, ResearchGate, SSRN, GitHub, LinkedIn
 - `research.html` - Published & accepted papers, working papers, industry publications (HBR), conference proceedings, book
 - `talks.html` - Invited talks and conference presentations. Two sections: "Selected Invited & Industry Talks" (linked/recorded — INMA, Oxera, PMDS videos) and "Conference Presentations and Invited Seminars" (year-grouped, old-Google-Sites style, `*` = co-author presented). Seeded from CV (`Conference Presentations and Invited Seminars` section); 2024-2026 use the old website's curated wording verbatim, 2023 and earlier seeded from CV
-- `awards.html` - Research and teaching awards
+- `awards.html` - Titled "Awards & Service". Three sections: Research Grants, Editorial & Reviewing, Fellowships & Invitations. Nav label is still the single word "Awards"
 - `teaching.html` - HEC Paris teaching experience (Grande Ecole, MBA/EMBA, PhD, Summer School)
 - `media.html` - Media appearances and press coverage (clickable titles, paper references). Invited/industry/recorded talks were split out to `talks.html` (June 2026). Three sections: "Policy & Regulatory Citations" (regulators/legislatures citing his papers directly), "Cited in Litigation" (court filings), "Press Coverage" (everything else, added July 2026)
 - `contact.html` - Contact information
@@ -192,3 +192,9 @@ Static HTML/CSS academic website for Klaus Miller, Assistant Professor of Quanti
 - KM: "a little bit broader but not much". `.container` 860px -> **920px**, site-wide. Home text column is now ~614px beside the unchanged 270px portrait
 - Width progression this day: 760 -> 860 -> 920. Photo column deliberately left at 270px; he asked for width, not a bigger photo
 - Committed by partial-staging again, since another session's uncommitted `.paper-links` block still shares `style.css`
+
+### October 2026 - Editorial & Reviewing Moved Off the Front Page
+- KM asked to drop "I serve as Guest Associate Editor ... and as an ad-hoc reviewer for ..." from `index.html` and put it "to service somewhere suitable". Paragraph 4 is now just the two Paris conferences; the bio is 4 paragraphs / ~219 words
+- The roles moved to `awards.html` as a new **"Editorial & Reviewing"** section, placed between Research Grants and Fellowships & Invitations so current service sits above the historical scholarships. Guest AE (IJRM) and ad-hoc reviewer (ManSci, MktSci, JMR, ISR) as two `ul.plain` entries, matching the page's existing markup
+- `awards.html` `<h1>` changed "Awards" -> **"Awards & Service"**, since the page already held grants and fellowships and now holds service too. The **nav label stays "Awards"** to avoid touching all 7 pages; say the word to align it
+- There is still **no separate Service page and no 8th nav item**; a 2026-04-27 plan to build a Service section on the front page was never approved and is now moot, since KM wants this off the front page entirely
