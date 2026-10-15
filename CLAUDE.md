@@ -204,3 +204,9 @@ Static HTML/CSS academic website for Klaus Miller, Assistant Professor of Quanti
 - Pure split: prose, `href` set and `<span class="venue">` set asserted byte-identical to the previous version. No rewording
 - Also normalised the bio `<p>`/`</p>` tags to one indentation level. One had been left at the wrong depth by the 2026-10-15 two-column refactor; cosmetic only
 - Bio paragraph count over this period: 4 -> 7 (2026-09-30) -> 4 (2026-10-07) -> 5 (now)
+
+### October 2026 - AI@HEC Workshop Added to Talks
+- Added "AI@HEC Research Workshop (HEC Paris)" to the **front** of the 2026 line on `talks.html` (internal AI@HEC research workshop, Wed 14 October 2026, convened by Christophe Perignon and Yann Algan; Klaus presented the AI Overviews / publisher-revenue project in a 10-minute slot). No `*`, he presented it himself. Front position per the page's newest-first-within-year convention; it postdates SAMS (September 2026)
+- **Reconciled against `miller_cv-2026-09-29a.docx` before adding anything else:** every other 2026 conference in the CV was already on the page (SAMS, Marketing Science, ZEW, EMAC, MGOW, Marketing Dynamics, Digital Economics Workshop Athens, INSEAD-HEC-ESSEC, Next Gen Antitrust/USC Gould, TU Muenchen, Bucharest, DICE, POMS). Oxera (April 2026) and INMA (June 2026) are already under Selected Invited & Industry Talks. So AI@HEC was the only gap
+- The CV marks several of these 2026 entries "(planned)"; the website lists them plainly. That is a standing KM decision from June 2026 ("Includes planned 2026 talks per KM"), left alone
+- Not added: the EPRS Digital Omnibus consultation (27 October 2026) has not happened yet, and it already appears under Policy & Regulatory Engagement on `media.html`
