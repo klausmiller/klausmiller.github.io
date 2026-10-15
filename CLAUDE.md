@@ -16,7 +16,7 @@ Static HTML/CSS academic website for Klaus Miller, Assistant Professor of Quanti
 - `teaching.html` - HEC Paris teaching experience (Grande Ecole, MBA/EMBA, PhD, Summer School)
 - `media.html` - Media appearances and press coverage (clickable titles, paper references). Invited/industry/recorded talks were split out to `talks.html` (June 2026). Three sections: "Policy & Regulatory Citations" (regulators/legislatures citing his papers directly), "Cited in Litigation" (court filings), "Press Coverage" (everything else, added July 2026)
 - `contact.html` - Contact information
-- `style.css` - Stylesheet with classes: `.venue` (italic journals), `.highlight` (bold awards), `.year`, `.plain` (no bullets), `.name`, `.bio` / `.bio-text` / `.bio-photo` (two-column bio), `.container` (760px max)
+- `style.css` - Stylesheet with classes: `.venue` (italic journals), `.highlight` (bold awards), `.year`, `.plain` (no bullets), `.name`, `.bio` / `.bio-text` / `.bio-photo` (two-column bio), `.container` (860px max)
 
 ## Files Not in Navigation
 - `education.html` - Removed from git (excluded from navigation)
@@ -35,7 +35,7 @@ Static HTML/CSS academic website for Klaus Miller, Assistant Professor of Quanti
 - `.plain` - List without bullets
 - `.name` - Nav name link
 - `.active` - Current page nav highlight
-- `.container` - Main wrapper (max-width 760px)
+- `.container` - Main wrapper (max-width 860px)
 - `.bio` - Two-column bio wrapper (flex)
 - `.bio-text` - Left text column
 - `.bio-photo` - Right portrait column (270px)
@@ -179,4 +179,11 @@ Static HTML/CSS academic website for Klaus Miller, Assistant Professor of Quanti
 - Mobile (<=600px): `flex-direction: column-reverse` puts the portrait above full-width text at 175px
 - `.profile-img` and `.profile-img-right` removed from `style.css`; both were now unused
 - **Trade-off flagged to KM:** at the 270px column the full frame renders his face about 85px tall, against about 108px for the 4:5 crop it replaced. He chose the full picture knowing this. The crop is recoverable from `bd2d94f:profile.jpg`
-- Container stays 760px, so the text column is about 454px. No other page changed
+- Container was 760px at this point; widened to 860px on 2026-10-15, see below
+
+### October 2026 - Wider Container, KM's Methods Wording
+- `.container` max-width 760px -> **860px**, site-wide (KM: "make the page a little bit wider"). The home text column is now ~554px beside the 270px portrait; the other six pages simply get wider lines, which suits them because they are mostly short list entries rather than prose
+- Methods clause in paragraph 2 replaced with **Klaus's own wording**: "drawing on large-scale field experiments and quasi-experimental methods for causal inference" (was "econometric methods, causal machine learning, and large-scale field experiments"). His words, proposed verbatim in his message
+- **Flagged to KM, not decided:** his wording drops "causal machine learning", which his own profile lists among his methods. One clause to add back if that was unintended
+- He also floated dropping the methods clause entirely. Kept it, on the argument that methods are a standard and useful signal on an academic homepage, and said so; one edit away if he disagrees
+- Bio stays 248 words, four paragraphs
