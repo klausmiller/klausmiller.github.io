@@ -275,3 +275,9 @@ First full link check of the site. **113 distinct links across 7 pages: 8 local 
 - **3 CNIL links return 503** because cnil.fr is under maintenance (KM confirmed). Not dead
 - **Bundeskartellamt returned 400 to a HEAD probe** but 200 to a full GET - query-string/HEAD artifact, not a problem
 - **Lesson:** a link checker must separate DEAD (404/410) from BLOCKED (403/429) and must retry HEAD failures with GET, or it generates mostly false alarms. Script kept at `<scratchpad>/link_check.py`
+
+### October 2026 - Policy Citations Named on the Home Page
+- New 6th bio paragraph after the credentials: "Regulators and competition authorities draw on this work in their own decisions and rules, among them the **Bundeskartellamt, the Italian Competition Authority, the European Commission and the U.S. Federal Trade Commission**", with the names linking to `media.html` (the Impact page). Bio 5 -> 6 paragraphs, 248 -> 243 words
+- **Scope is deliberate: only the four authorities' OWN texts are named.** Each was verified against the source document - Bundeskartellamt p.25 n.34, AGCM Section 72 n.79, EC DMA recital 93 n.81, FTC Negative Option Rule nn.538-539
+- **Not named on the home page, by design:** consultation responses (noyb, Utrecht/Chalmers/Karlstad), litigation filings (Zeithammer, 8th Cir. amicus), the CNIL concept paper and the OECD note. All are on the Impact page; they are real but a weaker claim than "a regulator cited this in its decision", and naming them would dilute the sentence
+- Wording is Claude's draft - KM owns his self-description, so expect him to adjust it ([[feedback_klaus_owns_self_description]])
