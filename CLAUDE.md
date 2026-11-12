@@ -46,7 +46,7 @@ Static HTML/CSS academic website for Klaus Miller, Assistant Professor of Quanti
 
 ## Key Decisions
 - "Sophisticated Consumers with Inertia" listed as "Forthcoming, American Economic Review" under Published & Accepted Papers (accepted 2026-09; was "Conditionally Accepted" under Working Papers from 2026-07-14)
-- "The Sources of Researcher Variation in Economics" (Many Economists Collaborative) listed as "Accepted, Journal of Economic Literature" under Published & Accepted Papers (updated 2026-08-17; was "Conditionally Accepted" under the now-dissolved collaborative section)
+- "The Sources of Researcher Variation in Economics" (Many Economists Collaborative) listed as "Forthcoming, Journal of Economic Literature" under Published & Accepted Papers (wording since 2026-09-11; "Accepted" from 2026-08-17; was "Conditionally Accepted" under the now-dissolved collaborative section). Title links to the AEA article page, SSRN preprint in the links row
 - No separate "Large-Scale Collaborative Research" section — consortium papers sit in the regular lists with a one-line "with [leads], and the [Collaborative]" attribution (KM decision, 2026-08-17)
 - Harvard Business Review pieces live in their own "Industry Publications" section, not mixed into Published & Accepted Papers (KM decision, 2026-08-17)
 - Media page: Titles are clickable links (where URL exists), no separate [Link]/[Video] lines
@@ -298,3 +298,10 @@ First full link check of the site. **113 distinct links across 7 pages: 8 local 
 - **Added to Press Coverage:** INMA, Greg Piechota, "Some Consumers Are Willing to Pay, Unwilling to Commit" (June 2026, quotes KM); PPC Land, "Privacy Setting Increases Online News Reading by 54%" (Oct 2024, ICIS cookie-tracking paper, quotes KM)
 - **Not added:** FTC Microeconomics Conference paper by Farronato/Fradkin/Lin (FTC-hosted, other authors - July 2026 rule); IAB Europe consent-or-pay papers (2024, IAB's own publications); noyb Annual Report 2025 and PPC Land Oct 2026 (repeat the figures without naming the authors); The Why We Project; INMA's write-up of the Master Class talk (talk already on talks.html)
 - **Homepage unchanged:** no new tier-1 citation, so the sentence naming the Bundeskartellamt, AGCM, European Commission and FTC stays as it is
+
+### November 2026 - JEL Title Link Back on the AEA Article Page
+- KM reported (2026-11-12) that the AEA page for the JEL paper is live again. `research.html` title link repointed from SSRN 5152665 to `https://www.aeaweb.org/articles?id=10.1257/jel.20261837`, stored without the `&&from=f` suffix. This closes the "restore the AEA link once AEA has a live page again" note from 2026-10-15; every Published & Accepted title now links to its publisher again
+- **Checked before switching:** the page answers HTTP 200 with the right title, sits under JEL "Forthcoming Articles", and lists three authors (Huntington-Klein, Pörtner, The Many-Economists Collaborative on Researcher Variation). Still **Forthcoming** - no volume, issue or pages - so the status line is unchanged
+- **Link to the aeaweb.org URL, not the DOI:** `doi.org/10.1257/jel.20261837` and the Crossref API both still return 404 (DOI not registered yet). Recheck when the paper gets an issue
+- The SSRN link stays in the entry's links row: AEA offers only a members-only preview, so SSRN is the open full text
+- **Open, flagged to KM, not changed:** the collapsible abstract on this entry is still the SSRN working-paper abstract ("We use a rigorous three-stage many-analysts design ..."). The AEA page carries the rewritten abstract of the accepted version ("Disagreement among researchers is a central and productive feature of scientific progress ..."). The 2026-10-15 rule was journal-version abstracts for published papers; JEL fell back to SSRN only because the AEA page was down
